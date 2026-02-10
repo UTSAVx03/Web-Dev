@@ -1,23 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Office Gate System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
-        body { font-family: 'Arial'; display: flex; align-items: center; justify-content: center; height: 100vh; background: #2f3640; margin: 0; }
-        .box { width: 500px; padding: 20px; background: white; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.4); text-align: center; }
-        .header { background: #0097e6; color: white; padding: 20px; margin: -20px -20px 20px -20px; border-radius: 15px 15px 0 0; }
-        iframe { width: 100%; border: none; min-height: 600px; }
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #141e30, #243b55);
+        }
+
+        .card {
+            width: 420px;
+            background: #ffffff;
+            border-radius: 18px;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #007bff, #00a8ff);
+            color: white;
+            padding: 30px 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+
+        .header p {
+            margin-top: 8px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 35px 30px 40px;
+        }
+
+        .content h2 {
+            margin-bottom: 10px;
+            font-size: 22px;
+            color: #2f3640;
+        }
+
+        .content p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 28px;
+            background: #007bff;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.25s ease;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 123, 255, 0.4);
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #888;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 90%;
+            }
+        }
     </style>
 </head>
+
 <body>
-    <div style="text-align:center; padding:50px;">
-    <h1>Visitor Entry System</h1>
-    <!-- Replace the URL below with your actual form URL -->
-    <a href="https://utsavkumar006.app.n8n.cloud/form/25860666-4209-4f70-8abe-bff2e1e863a0" 
-       target="_blank" 
-       style="padding: 20px; background: #007bff; color: white; text-decoration: none; border-radius: 8px; font-size: 20px;">
-       Click to Open Visitor Form
-    </a>
-</div>
+
+    <div class="card">
+        <div class="header">
+            <h1>Office Gate System</h1>
+            <p>Authorized Visitor Access Portal</p>
+        </div>
+
+        <div class="content">
+            <h2>Visitor Entry</h2>
+            <p>Please submit your details to generate your gate pass.</p>
+
+            <a class="btn"
+               href="https://utsavkumar006.app.n8n.cloud/form/25860666-4209-4f70-8abe-bff2e1e863a0"
+               target="_blank">
+                Enter Visitor Details
+            </a>
+
+            <div class="footer">
+                © Security Desk · Access Logged & Monitored
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
